@@ -10,6 +10,7 @@ const Aout1 = () => {
           Our mission
         </h2>
         <h1 className="text-5xl text-center font-semibold">
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
           We’re making homeownership simpler, faster — <br /> and most
           importantly, more accessible for all <br /> Americans.
         </h1>
