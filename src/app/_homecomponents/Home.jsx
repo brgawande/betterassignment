@@ -1,12 +1,13 @@
 import React from "react";
 import { MdOutlineTimer } from "react-icons/md";
+import Image from "next/image";
 
 const Home = () => {
   return (
     <div className="bg-[#004733] pt-[80px] h-[140vh] text-white relative">
       <div className="dflex gap-5 pt-10">
         <div className="h-10 w-10 rounded-full">
-          <img
+          <Image
             className="h-[100%] w-[100%]"
             src="/images/ratedrop.svg"
             alt=""
@@ -34,12 +35,12 @@ const Home = () => {
         {/* right hannd side content */}
         <div className="dflex flex-col gap-3">
           <div className="dflex gap-1">
-            <img src="/images/googlelogo.svg" alt="" />
-            <img src="/images/star.svg" alt="" />
-            <img src="/images/star.svg" alt="" />
-            <img src="/images/star.svg" alt="" />
-            <img src="/images/star.svg" alt="" />
-            <img src="/images/halfstar.svg" alt="" />
+            <Image src="/images/googlelogo.svg" alt="" />
+            <Image src="/images/star.svg" alt="" />
+            <Image src="/images/star.svg" alt="" />
+            <Image src="/images/star.svg" alt="" />
+            <Image src="/images/star.svg" alt="" />
+            <Image src="/images/halfstar.svg" alt="" />
           </div>
           <div className="flex items-center gap-1">
             <p>4.6 Stars | 3177 Google reviews</p>
@@ -47,7 +48,7 @@ const Home = () => {
         </div>
       </div>
       <div className="dflex h-[610px] w-full bottom-0 absolute">
-        <img
+        <Image
           className="h-[100%] z-0 w-[100%] object-contain"
           src="/images/homebg.webp"
           alt=""

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Home1 = () => {
   return (
@@ -7,7 +8,7 @@ const Home1 = () => {
         {/* image div */}
         <div className="w-[50%] ">
           <div className="h-[600px] dflex w-auto rounded-[20px]">
-            <img
+            <Image
               src="/images/home1pic.webp"
               className="h-[100%] w-auto objet-contain rounded-[20px]"
               alt=""

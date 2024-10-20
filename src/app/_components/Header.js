@@ -2,6 +2,7 @@ import React from "react";
 import logo from "next/image";
 import Link from "next/link";
 import { MdCall } from "react-icons/md";
+import Image from "next/image";
 
 const Header = ({ bgcolor, text }) => {
   return (
@@ -12,9 +13,9 @@ const Header = ({ bgcolor, text }) => {
       <div className="dflex gap-10">
         <div className="logo">
           {bgcolor === "white" ? (
-            <img src="/images/logo1.svg" />
+            <Image src="/images/logo1.svg" />
           ) : (
-            <img src="/images/logo1.svg" className="filter invert" />
+            <Image src="/images/logo1.svg" className="filter invert" />
           )}
         </div>
         <div className="dflex gap-[70px]">

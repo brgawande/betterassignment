@@ -2,6 +2,7 @@ import React from "react";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { IoPhonePortraitSharp } from "react-icons/io5";
 import { CiDollar } from "react-icons/ci";
+import Image from "next/image";
 
 const Start1 = () => {
   return (
@@ -13,13 +14,13 @@ const Start1 = () => {
         <div className=" dflex flex-col gap-5 pt-10">
           <div className="rounded-md py-3 pl-10 w-[40%] flex items-center gap-4 border-[1px] border-[#808080] hover:border-[5px] hover:border-[darkgreen]">
             <div>
-              <img src="\images\homelogo.svg" alt="" />
+              <Image src="\images\homelogo.svg" alt="" />
             </div>
             <h1 className="text-xl font-semibold pl-2">Buying a home</h1>
           </div>
           <div className="rounded-md py-3 pl-10 w-[40%] flex items-center gap-4 border-[1px] border-[#808080] hover:border-[5px] hover:border-[darkgreen]">
             <div>
-              <img src="\images\homedollor2.svg" alt="" />
+              <Image src="\images\homedollor2.svg" alt="" />
             </div>
             <h1 className="text-xl font-semibold pl-2">
               Refinance my mortgage
@@ -27,7 +28,7 @@ const Start1 = () => {
           </div>
           <div className="rounded-md py-3 pl-10 w-[40%] flex items-center gap-4 border-[1px] border-[#808080] hover:border-[5px] hover:border-[darkgreen]">
             <div>
-              <img src="\images\homedollor1.svg" alt="" />
+              <Image src="\images\homedollor1.svg" alt="" />
             </div>
             <h1 className="text-xl font-semibold pl-2">
               Get cash from my home

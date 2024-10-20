@@ -1,5 +1,6 @@
 import React from "react";
 import { MdCall } from "react-icons/md";
+import Image from "next/image";
 
 const StartHeader = () => {
   return (
@@ -7,14 +8,14 @@ const StartHeader = () => {
       <div className=" h-[15vh] dflex">
         <div className=" relative w-[80%] h-[15vh] z-10 border-b-[4px] border-[#dcd9d4] m-auto flex items-center justify-between">
           <div>
-            <img src="/images/bettermortagagelogo1.svg" alt="" />
+            <Image src="/images/bettermortagagelogo1.svg" alt="" />
           </div>
           <div className="dflex gap-4">
             <MdCall className="text-xl" />
             <p>Need help? Call (415) 523 8837</p>
           </div>
           <div className="absolute h-12 w-12 rounded-full -bottom-7 left-1/2 transform -translate-x-1/2">
-            <img
+            <Image
               className="h-[100%] w-[100%] rounded-full"
               src="\images\betty1.jpeg"
               alt=""

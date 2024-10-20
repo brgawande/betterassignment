@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Aout1 = () => {
   return (
@@ -32,7 +33,7 @@ const Aout1 = () => {
         {/* image part */}
         <div className="w-[40%] flex items-start justify-start ">
           <div className="h-[300px] w-[400px]">
-            <img
+            <Image
               className="h-[100%] w-[100%] object-contain"
               src="https://media.better.com/video/vishal-mission.jpg"
               alt=""
@@ -64,25 +65,25 @@ const Aout1 = () => {
           <h1 className="text-3xl font-bold">Backed by</h1>
           <div className="flex justify-evenly gap-8 pt-10">
             <div>
-              <img src="/images/company1.svg" alt="" />
+              <Image src="/images/company1.svg" alt="" />
             </div>
             <div>
-              <img src="/images/company2.svg" alt="" />
+              <Image src="/images/company2.svg" alt="" />
             </div>
             <div>
-              <img src="/images/company3.svg" alt="" />
+              <Image src="/images/company3.svg" alt="" />
             </div>
             <div>
-              <img src="/images/company4.svg" alt="" />
+              <Image src="/images/company4.svg" alt="" />
             </div>
             <div>
-              <img src="/images/company5.svg" alt="" />
+              <Image src="/images/company5.svg" alt="" />
             </div>
             <div>
-              <img src="/images/company6.svg" alt="" />
+              <Image src="/images/company6.svg" alt="" />
             </div>
             <div>
-              <img src="/images/company7.svg" alt="" />
+              <Image src="/images/company7.svg" alt="" />
             </div>
           </div>
         </div>
