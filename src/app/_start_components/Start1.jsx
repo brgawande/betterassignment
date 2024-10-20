@@ -8,7 +8,7 @@ const Start1 = () => {
   return (
     <div className="pt-[170px] pb-[20vh]">
       <h1 className="text-center font-semibold text-5xl">
-        Hi, I'm Betsy! <br /> What can I help you with?
+        Hi, I&apos;m Betsy! <br /> What can I help you with?
       </h1>
       <div className="flex flex-col gap-5 pt-10">
         {/* Buying a home card */}
