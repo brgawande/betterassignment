@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "next/image";
 import Link from "next/link";
 import { MdCall } from "react-icons/md";
 import Image from "next/image";
@@ -11,35 +10,45 @@ const Header = ({ bgcolor, text }) => {
     >
       {/* left half starts */}
       <div className="dflex gap-10">
-        <div className="logo">
+        <div className="logo relative h-20 w-20">
+          {" "}
+          {/* Set relative position */}
           {bgcolor === "white" ? (
-            <Image src="/images/logo1.svg" fill />
+            <Image
+              src="/images/logo1.svg"
+              alt="Logo"
+              layout="fill"
+              objectFit="contain"
+            />
           ) : (
-            <Image src="/images/logo1.svg" className="filter invert" fill />
+            <Image
+              src="/images/logo1.svg"
+              alt="Logo"
+              className="filter invert"
+              layout="fill"
+              objectFit="contain"
+            />
           )}
         </div>
         <div className="dflex gap-[70px]">
-          <Link href={"/aboutus"}>Buy</Link>
-          <Link href={"/aboutus"}>Refinance</Link>
-          <Link href={"/aboutus"}>HELOC</Link>
-          <Link href={"/aboutus"}>Rates</Link>
-          <Link href={"/aboutus"}>Better+</Link>
+          <Link href="/aboutus">Buy</Link>
+          <Link href="/aboutus">Refinance</Link>
+          <Link href="/aboutus">HELOC</Link>
+          <Link href="/aboutus">Rates</Link>
+          <Link href="/aboutus">Better+</Link>
         </div>
       </div>
       {/* right half starts */}
       <div className="dflex gap-[50px] pr-10">
         {bgcolor === "white" ? (
-          <div className="border-[0.5px] border-black hover:bg-[white] h-12 w-12 dflex rounded-full">
-            {" "}
+          <div className="border-[0.5px] border-black hover:bg-white h-12 w-12 dflex rounded-full">
             <MdCall className="text-2xl" />
           </div>
         ) : (
-          <div className="border-[0.5px] border-white hover:bg-[black] h-12 w-12 dflex rounded-full">
-            {" "}
+          <div className="border-[0.5px] border-white hover:bg-black h-12 w-12 dflex rounded-full">
             <MdCall className="text-2xl" />
           </div>
         )}
-
         <button>Sign in</button>
         {bgcolor === "white" ? (
           <button className="btn bg-darkgreen text-white">Continue</button>

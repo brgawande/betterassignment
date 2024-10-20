@@ -7,67 +7,57 @@ import Image from "next/image";
 const Start1 = () => {
   return (
     <div className="pt-[170px] pb-[20vh]">
-      <div>
-        <h1 className="text-center font-semibold text-5xl">
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
-          Hi, I'm Betsy! <br /> What can I help you with?
-        </h1>
-        <div className=" dflex flex-col gap-5 pt-10">
-          <div className="rounded-md py-3 pl-10 w-[40%] flex items-center gap-4 border-[1px] border-[#808080] hover:border-[5px] hover:border-[darkgreen]">
-            <div>
-              <Image src="\images\homelogo.svg" alt="" />
-            </div>
-            <h1 className="text-xl font-semibold pl-2">Buying a home</h1>
-          </div>
-          <div className="rounded-md py-3 pl-10 w-[40%] flex items-center gap-4 border-[1px] border-[#808080] hover:border-[5px] hover:border-[darkgreen]">
-            <div>
-              <Image src="\images\homedollor2.svg" alt="" />
-            </div>
-            <h1 className="text-xl font-semibold pl-2">
-              Refinance my mortgage
-            </h1>
-          </div>
-          <div className="rounded-md py-3 pl-10 w-[40%] flex items-center gap-4 border-[1px] border-[#808080] hover:border-[5px] hover:border-[darkgreen]">
-            <div>
-              <Image src="\images\homedollor1.svg" alt="" />
-            </div>
-            <h1 className="text-xl font-semibold pl-2">
-              Get cash from my home
-            </h1>
-          </div>
+      <h1 className="text-center font-semibold text-5xl">
+        Hi, I'm Betsy! <br /> What can I help you with?
+      </h1>
+      <div className="flex flex-col gap-5 pt-10">
+        {/* Buying a home card */}
+        <div className="rounded-md py-3 pl-10 w-[40%] flex items-center gap-4 border-[1px] border-[#808080] hover:border-[5px] hover:border-[darkgreen]">
+          <Image src="/images/homelogo.svg" alt="Buying a home" />
+          <h1 className="text-xl font-semibold pl-2">Buying a home</h1>
+        </div>
+
+        {/* Refinance mortgage card */}
+        <div className="rounded-md py-3 pl-10 w-[40%] flex items-center gap-4 border-[1px] border-[#808080] hover:border-[5px] hover:border-[darkgreen]">
+          <Image src="/images/homedollor2.svg" alt="Refinance my mortgage" />
+          <h1 className="text-xl font-semibold pl-2">Refinance my mortgage</h1>
+        </div>
+
+        {/* Get cash card */}
+        <div className="rounded-md py-3 pl-10 w-[40%] flex items-center gap-4 border-[1px] border-[#808080] hover:border-[5px] hover:border-[darkgreen]">
+          <Image src="/images/homedollor1.svg" alt="Get cash from my home" />
+          <h1 className="text-xl font-semibold pl-2">Get cash from my home</h1>
         </div>
       </div>
-      {/* part2 */}
-      <div className="dflex my-10 pt-10">
-        <div className="flex justify-between items-center  w-[40%] m-auto">
-          <div className="dflex flex-col">
+
+      {/* Part 2: Statistics */}
+      <div className="flex my-10 pt-10">
+        <div className="flex justify-between items-center w-[40%] m-auto">
+          <div className="flex flex-col">
             <h1 className="text-4xl font-semibold">$100B</h1>
             <p className="text-[14px]">home loans funded entirely online</p>
           </div>
-          <div className="dflex flex-col">
+          <div className="flex flex-col">
             <h1 className="text-4xl font-semibold">400K</h1>
             <p className="text-[14px]">Customers who chose a Better Mortgage</p>
           </div>
         </div>
       </div>
 
-      {/* part3 */}
-      <div className="dflex mt-20">
+      {/* Part 3: Benefits */}
+      <div className="flex mt-20">
         <div className="w-[40%] m-auto py-5 bg-[#f0f7f1] shadow-md">
-          <h2 className="text-center">
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            After a few questions, you'll unlock:
-          </h2>
-          <div className=" w-[40%] m-auto mt-5">
-            <div className=" flex items-center my-2 justify-start gap-2">
+          <h2 className="text-center">After a few questions, you'll unlock:</h2>
+          <div className="w-[40%] m-auto mt-5">
+            <div className="flex items-center my-2 justify-start gap-2">
               <IoMdCloseCircleOutline />
               <p>Custom mortgage rates</p>
             </div>
-            <div className=" flex items-center my-2 gap-2">
+            <div className="flex items-center my-2 gap-2">
               <CiDollar />
               <p>Exclusive offers</p>
             </div>
-            <div className=" flex items-center my-2 gap-2">
+            <div className="flex items-center my-2 gap-2">
               <IoPhonePortraitSharp />
               <p>A personalized dashboard</p>
             </div>

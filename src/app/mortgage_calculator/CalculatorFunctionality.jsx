@@ -3,107 +3,113 @@
 import React, { useState } from "react";
 
 const CalculatorFunctionality = () => {
-  const [homeprice, setHomePrice] = useState(50000);
-  const [zipcode, setZipCode] = useState(400017);
+  const [homePrice, setHomePrice] = useState(50000);
+  const [zipCode, setZipCode] = useState(400017);
   const [downPayment, setDownPayment] = useState(10000);
+  const [interestRate, setInterestRate] = useState(3); // Assuming a default interest rate
+  const [loanLength, setLoanLength] = useState(30); // Assuming a default loan length
+
   return (
     <div className="pt-[170px] bg-primary h-[100vh]">
-      <div className=" w-[85%] m-auto">
-        <div>
-          <h1 className="text-5xl pb-5 font-bold">Mortgage calculator</h1>
-          <p className="pt-4 text-gray w-[60%] pb-10">
-            Our mortgage calculator includes key factors like homeowners
-            association fees, property taxes, and private mortgage insurance
-            (PMI). Get the whole picture and calculate your total monthly
-            payment.
-          </p>
-        </div>
-        {/* part2 */}
+      <div className="w-[85%] m-auto">
+        <h1 className="text-5xl pb-5 font-bold">Mortgage Calculator</h1>
+        <p className="pt-4 text-gray w-[60%] pb-10">
+          Our mortgage calculator includes key factors like homeowners
+          association fees, property taxes, and private mortgage insurance
+          (PMI). Get the whole picture and calculate your total monthly payment.
+        </p>
+
+        {/* Home Price and Monthly Payments */}
         <div className="flex justify-between items-center">
-          <div className="flex flex-col gap-5  w-[25%]">
-            <h2 className="font-semibold">Home Price</h2>
+          <div className="flex flex-col gap-5 w-[25%]">
+            <label htmlFor="homePrice" className="font-semibold">
+              Home Price
+            </label>
             <div className="relative">
               <p className="text-6xl font-semibold pl-4 absolute top-3">$</p>
               <input
+                id="homePrice"
                 className="border-[2px] border-[#9f9f9f] rounded-lg text-6xl font-semibold pl-[50px] w-full"
                 type="number"
-                name=""
-                id=""
-                value={homeprice}
-                onChange={(e) => setHomePrice(e.target.value)}
+                value={homePrice}
+                onChange={(e) => setHomePrice(Number(e.target.value))}
               />
             </div>
           </div>
           <div className="flex flex-col gap-5">
             <h2 className="font-semibold">Monthly Payments</h2>
-            <div>
-              <h1 className="font-semibold text-6xl">$882/mo</h1>
-            </div>
+            <h1 className="font-semibold text-6xl">$882/mo</h1>
           </div>
-          <div className="pt-5  w-[17%]">
+          <div className="pt-5 w-[17%]">
             <button className="bg-[#017848] text-white py-4 w-full rounded-md font-semibold">
-              Get pre-approved
+              Get Pre-Approved
             </button>
           </div>
         </div>
-        {/* progress bar */}
-        {/* input elements */}
+
+        {/* Input Elements */}
         <div className="pt-[100px] flex justify-between items-center">
-          {/* left side */}
           <div className="flex items-center gap-6">
             <div className="relative">
-              <p className="absolute pl-4 top-1 text-gray text-[15px]">
+              <label
+                htmlFor="zipCode"
+                className="absolute pl-4 top-1 text-gray text-[15px]"
+              >
                 ZIP CODE
-              </p>
+              </label>
               <input
+                id="zipCode"
                 className="border-[2px] border-gray-400 pt-6 px-4 font-semibold text-xl pb-2 rounded-md"
                 type="number"
-                name=""
-                id=""
-                value={zipcode}
-                onChange={(e) => setZipCode(e.target.value)}
+                value={zipCode}
+                onChange={(e) => setZipCode(Number(e.target.value))}
               />
             </div>
             <div className="relative">
-              <p className="absolute pl-4 top-1 text-gray text-[15px]">
+              <label
+                htmlFor="downPayment"
+                className="absolute pl-4 top-1 text-gray text-[15px]"
+              >
                 Down Payment
-              </p>
+              </label>
               <input
+                id="downPayment"
                 className="border-[2px] border-gray-400 pt-6 px-4 font-semibold text-xl pb-2 rounded-md"
                 type="number"
-                name=""
-                id=""
-                value={zipcode}
-                onChange={(e) => setZipCode(e.target.value)}
+                value={downPayment}
+                onChange={(e) => setDownPayment(Number(e.target.value))}
               />
             </div>
           </div>
-          {/* right side */}
           <div className="flex items-center gap-6">
             <div className="relative">
-              <p className="absolute pl-4 top-1 text-gray text-[15px]">
+              <label
+                htmlFor="interestRate"
+                className="absolute pl-4 top-1 text-gray text-[15px]"
+              >
                 Interest Rate
-              </p>
+              </label>
               <input
+                id="interestRate"
                 className="border-[2px] border-gray-400 pt-6 px-4 font-semibold text-xl pb-2 rounded-md"
                 type="number"
-                name=""
-                id=""
-                value={downPayment}
-                onChange={(e) => setDownPayment(e.target.value)}
+                value={interestRate}
+                onChange={(e) => setInterestRate(Number(e.target.value))}
               />
             </div>
             <div className="relative">
-              <p className="absolute pl-4 top-1 text-gray text-[15px]">
+              <label
+                htmlFor="loanLength"
+                className="absolute pl-4 top-1 text-gray text-[15px]"
+              >
                 Length of Loan
-              </p>
+              </label>
               <input
+                id="loanLength"
                 className="border-[2px] border-gray-400 pt-6 px-4 font-semibold text-xl pb-2 rounded-md"
                 type="number"
-                name=""
-                id=""
-                value={downPayment}
-                onChange={(e) => setDownPayment(e.target.value)}
+                value={loanLength}
+                onChange={(e) => setLoanLength(Number(e.target.value))}
               />
             </div>
           </div>
