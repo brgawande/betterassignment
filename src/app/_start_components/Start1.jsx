@@ -47,7 +47,9 @@ const Start1 = () => {
       {/* Part 3: Benefits */}
       <div className="flex mt-20">
         <div className="w-[40%] m-auto py-5 bg-[#f0f7f1] shadow-md">
-          <h2 className="text-center">After a few questions, you'll unlock:</h2>
+          <h2 className="text-center">
+            After a few questions, you&apos;ll unlock:
+          </h2>
           <div className="w-[40%] m-auto mt-5">
             <div className="flex items-center my-2 justify-start gap-2">
               <IoMdCloseCircleOutline />
