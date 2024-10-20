@@ -13,9 +13,9 @@ const Header = ({ bgcolor, text }) => {
       <div className="dflex gap-10">
         <div className="logo">
           {bgcolor === "white" ? (
-            <Image src="/images/logo1.svg" />
+            <Image src="/images/logo1.svg" fill />
           ) : (
-            <Image src="/images/logo1.svg" className="filter invert" />
+            <Image src="/images/logo1.svg" className="filter invert" fill />
           )}
         </div>
         <div className="dflex gap-[70px]">

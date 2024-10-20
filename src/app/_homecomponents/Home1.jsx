@@ -12,6 +12,7 @@ const Home1 = () => {
               src="/images/home1pic.webp"
               className="h-[100%] w-auto objet-contain rounded-[20px]"
               alt=""
+              fill
             />
           </div>
           <div className="dflex pt-5 gap-5">

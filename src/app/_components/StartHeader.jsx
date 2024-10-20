@@ -8,7 +8,7 @@ const StartHeader = () => {
       <div className=" h-[15vh] dflex">
         <div className=" relative w-[80%] h-[15vh] z-10 border-b-[4px] border-[#dcd9d4] m-auto flex items-center justify-between">
           <div>
-            <Image src="/images/bettermortagagelogo1.svg" alt="" />
+            <Image src="/images/bettermortagagelogo1.svg" alt="" fill />
           </div>
           <div className="dflex gap-4">
             <MdCall className="text-xl" />
@@ -19,6 +19,7 @@ const StartHeader = () => {
               className="h-[100%] w-[100%] rounded-full"
               src="\images\betty1.jpeg"
               alt=""
+              fill
             />
           </div>
         </div>

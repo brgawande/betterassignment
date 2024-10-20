@@ -11,6 +11,7 @@ const Home = () => {
             className="h-[100%] w-[100%]"
             src="/images/ratedrop.svg"
             alt=""
+            fill
           />
         </div>
         <h2 className="text-4xl">Rate drop alert</h2>
@@ -35,12 +36,12 @@ const Home = () => {
         {/* right hannd side content */}
         <div className="dflex flex-col gap-3">
           <div className="dflex gap-1">
-            <Image src="/images/googlelogo.svg" alt="" />
-            <Image src="/images/star.svg" alt="" />
-            <Image src="/images/star.svg" alt="" />
-            <Image src="/images/star.svg" alt="" />
-            <Image src="/images/star.svg" alt="" />
-            <Image src="/images/halfstar.svg" alt="" />
+            <Image src="/images/googlelogo.svg" alt="" fill />
+            <Image src="/images/star.svg" alt="" fill />
+            <Image src="/images/star.svg" alt="" fill />
+            <Image src="/images/star.svg" alt="" fill />
+            <Image src="/images/star.svg" alt="" fill />
+            <Image src="/images/halfstar.svg" alt="" fill />
           </div>
           <div className="flex items-center gap-1">
             <p>4.6 Stars | 3177 Google reviews</p>
@@ -52,6 +53,7 @@ const Home = () => {
           className="h-[100%] z-0 w-[100%] object-contain"
           src="/images/homebg.webp"
           alt=""
+          fill
         />
       </div>
     </div>

@@ -37,6 +37,7 @@ const Aout1 = () => {
               className="h-[100%] w-[100%] object-contain"
               src="https://media.better.com/video/vishal-mission.jpg"
               alt=""
+              fill
             />
           </div>
         </div>
@@ -65,25 +66,25 @@ const Aout1 = () => {
           <h1 className="text-3xl font-bold">Backed by</h1>
           <div className="flex justify-evenly gap-8 pt-10">
             <div>
-              <Image src="/images/company1.svg" alt="" />
+              <Image src="/images/company1.svg" alt="" fill />
             </div>
             <div>
-              <Image src="/images/company2.svg" alt="" />
+              <Image src="/images/company2.svg" alt="" fill />
             </div>
             <div>
-              <Image src="/images/company3.svg" alt="" />
+              <Image src="/images/company3.svg" alt="" fill />
             </div>
             <div>
-              <Image src="/images/company4.svg" alt="" />
+              <Image src="/images/company4.svg" alt="" fill />
             </div>
             <div>
               <Image src="/images/company5.svg" alt="" />
             </div>
             <div>
-              <Image src="/images/company6.svg" alt="" />
+              <Image src="/images/company6.svg" alt="" fill />
             </div>
             <div>
-              <Image src="/images/company7.svg" alt="" />
+              <Image src="/images/company7.svg" alt="" fill />
             </div>
           </div>
         </div>
