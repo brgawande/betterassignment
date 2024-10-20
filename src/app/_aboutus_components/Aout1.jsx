@@ -22,11 +22,11 @@ const Aout1 = () => {
           <h1 className="text-bold text-4xl pb-8">The status quo is broken</h1>
           <p className="text-[15px] text-[#3c3c3c] pb-5">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            "The traditional processes around homeownership are opaque and
-            stressful. Fees aren’t transparent and some are simply outrageous in
+            The traditional processes around homeownership are opaque and
+            stressful. Fees arent transparent and some are simply outrageous in
             size. Traditional mortgage lending is rife with unnecessary fees and
-            slow, painful processes. It’s a system set up to benefit insiders —
-            not you. Better.com CEO, Vishal Garg, set out to change that."
+            slow, painful processes. Its a system set up to benefit insiders —
+            not you. Better.com CEO, Vishal Garg, set out to change that.
           </p>
           <button className="bg-[#017848] px-10 py-[20px] rounded-md text-white">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
