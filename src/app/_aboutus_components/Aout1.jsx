@@ -27,6 +27,7 @@ const Aout1 = () => {
             not you. Better.com CEO, Vishal Garg, set out to change that."
           </p>
           <button className="bg-[#017848] px-10 py-[20px] rounded-md text-white">
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             Read Vishal's Story
           </button>
         </div>
