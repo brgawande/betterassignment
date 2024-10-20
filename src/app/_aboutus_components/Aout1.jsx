@@ -20,6 +20,7 @@ const Aout1 = () => {
         <div className=" pl-[250px] pr-[80px] w-[50%] flex flex-col items-start justify-center">
           <h1 className="text-bold text-4xl pb-8">The status quo is broken</h1>
           <p className="text-[15px] text-[#3c3c3c] pb-5">
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             "The traditional processes around homeownership are opaque and
             stressful. Fees aren’t transparent and some are simply outrageous in
             size. Traditional mortgage lending is rife with unnecessary fees and
