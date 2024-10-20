@@ -8,7 +8,7 @@ const Start1 = () => {
   return (
     <div className="pt-[170px] pb-[20vh]">
       <h1 className="text-center font-semibold text-5xl">
-        Hi, I'm Betsy! <br /> What can I help you with?
+        Hi, I&apos;m Betsy! <br /> What can I help you with?
       </h1>
       <div className="flex flex-col gap-5 pt-10">
         {/* Buying a home card */}
@@ -47,7 +47,9 @@ const Start1 = () => {
       {/* Part 3: Benefits */}
       <div className="flex mt-20">
         <div className="w-[40%] m-auto py-5 bg-[#f0f7f1] shadow-md">
-          <h2 className="text-center">After a few questions, you'll unlock:</h2>
+          <h2 className="text-center">
+            After a few questions, you&apos;ll unlock:
+          </h2>
           <div className="w-[40%] m-auto mt-5">
             <div className="flex items-center my-2 justify-start gap-2">
               <IoMdCloseCircleOutline />
