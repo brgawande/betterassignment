@@ -9,6 +9,12 @@ const CalculatorFunctionality = () => {
   const [interestRate, setInterestRate] = useState(3); // Assuming a default interest rate
   const [loanLength, setLoanLength] = useState(30); // Assuming a default loan length
 
+  const [progress, setProgress] = useState(0);
+
+  const handleChange = (e) => {
+    setProgress(e.target.value);
+  };
+
   return (
     <div className="pt-[170px] bg-primary h-[100vh]">
       <div className="w-[85%] m-auto">
@@ -47,8 +53,21 @@ const CalculatorFunctionality = () => {
           </div>
         </div>
 
+        <div className="w-full flex items-center justify-center pt-10">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={progress}
+            onChange={handleChange}
+            className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer"
+            style={{ accentColor: "#4A90E2" }} // Customize the color if needed
+          />
+          <span className="ml-4">{progress}%</span>
+        </div>
+
         {/* Input Elements */}
-        <div className="pt-[100px] flex justify-between items-center">
+        <div className="pt-[50px] flex justify-between items-center">
           <div className="flex items-center gap-6">
             <div className="relative">
               <label

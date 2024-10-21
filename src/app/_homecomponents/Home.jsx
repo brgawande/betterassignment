@@ -5,15 +5,16 @@ import Image from "next/image";
 const Home = () => {
   return (
     <div className="bg-[#004733] pt-[80px] h-[140vh] text-white relative">
-      <div className="flex gap-5 pt-10 items-center">
-        <div className="h-10 w-10 rounded-full relative">
+      <div className="dflex  gap-5 pt-10 items-center justify-centert">
+        <div className="h-10 w-10 rounded-full      ">
           {" "}
           {/* Add relative positioning for Image */}
           <Image
             className="h-[100%] w-[100%]"
             src="/images/ratedrop.svg"
             alt="Rate drop icon"
-            layout="fill"
+            width={50}
+            height={50}
             objectFit="contain"
           />
         </div>
@@ -22,7 +23,7 @@ const Home = () => {
 
       <div className="pt-10 flex justify-center">
         <h2 className="text-[100px] font-bold text-center leading-[1.08] z-10">
-          The rate drop you’ve <br /> been waiting for
+          The rate drop you&apos;ve <br /> been waiting for
         </h2>
       </div>
 
@@ -43,37 +44,43 @@ const Home = () => {
             <Image
               src="/images/googlelogo.svg"
               alt="Google logo"
-              layout="fill"
+              width={20}
+              height={20}
               objectFit="contain"
             />
             <Image
               src="/images/star.svg"
               alt="Star"
-              layout="fill"
+              width={20}
+              height={20}
               objectFit="contain"
             />
             <Image
               src="/images/star.svg"
               alt="Star"
-              layout="fill"
+              width={20}
+              height={20}
               objectFit="contain"
             />
             <Image
               src="/images/star.svg"
               alt="Star"
-              layout="fill"
+              width={20}
+              height={20}
               objectFit="contain"
             />
             <Image
               src="/images/star.svg"
               alt="Star"
-              layout="fill"
+              width={20}
+              height={20}
               objectFit="contain"
             />
             <Image
               src="/images/halfstar.svg"
               alt="Half star"
-              layout="fill"
+              width={20}
+              height={20}
               objectFit="contain"
             />
           </div>
@@ -83,9 +90,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex h-[610px] w-full bottom-0 absolute">
+      <div className="flex h-[610px] w-[400px] bottom-0 absolute left-1/2 transform -translate-x-1/2">
         <Image
-          className="h-[100%] z-0 w-[100%] object-cover"
+          className="z-0 object-cover"
           src="/images/homebg.webp"
           alt="Background image"
           layout="fill"

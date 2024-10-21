@@ -69,7 +69,7 @@ const Aout1 = () => {
         <div className="dflex flex-col gap-5">
           <h1 className="text-3xl font-bold">Backed by</h1>
           <div className="flex justify-evenly gap-8 pt-10">
-            <div className="relative h-20 w-20">
+            <div className="relative h-40 w-40">
               <Image
                 src="/images/company1.svg"
                 alt="Company 1"
@@ -77,7 +77,7 @@ const Aout1 = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="relative h-20 w-20">
+            <div className="relative h-40 w-40">
               <Image
                 src="/images/company2.svg"
                 alt="Company 2"
@@ -85,7 +85,7 @@ const Aout1 = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="relative h-20 w-20">
+            <div className="relative h-40 w-40">
               <Image
                 src="/images/company3.svg"
                 alt="Company 3"
@@ -93,7 +93,7 @@ const Aout1 = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="relative h-20 w-20">
+            <div className="relative h-40 w-40">
               <Image
                 src="/images/company4.svg"
                 alt="Company 4"
@@ -101,7 +101,7 @@ const Aout1 = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="relative h-20 w-20">
+            <div className="relative h-40 w-40">
               <Image
                 src="/images/company5.svg"
                 alt="Company 5"
@@ -109,7 +109,7 @@ const Aout1 = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="relative h-20 w-20">
+            <div className="relative h-40 w-40">
               <Image
                 src="/images/company6.svg"
                 alt="Company 6"
@@ -117,7 +117,7 @@ const Aout1 = () => {
                 objectFit="contain"
               />
             </div>
-            <div className="relative h-20 w-20">
+            <div className="relative h-40 w-40">
               <Image
                 src="/images/company7.svg"
                 alt="Company 7"
